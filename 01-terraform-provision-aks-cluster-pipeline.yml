@@ -29,6 +29,7 @@ stages:
         inputs:
           provider: 'azurerm'
           command: 'init'
+          workingDirectory: '$(System.DefaultWorkingDirectory)//terraform-manifests'
           backendServiceArm: 'terraform-aks-azurerm-svc-con'
           backendAzureRmResourceGroupName: 'aks-rg2'
           backendAzureRmStorageAccountName: 'terraformadbuchupalli'
